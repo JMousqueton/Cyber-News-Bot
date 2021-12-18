@@ -24,7 +24,7 @@ config.set('Bot', 'LastRun', str(now))
 with open("config.cfg", 'w') as f:
 	config.write(f)
 
-client = tweepy.Client(bearer_token=Bearer_token.replace("'", ""), consumer_key=API_key, consumer_secret=API_key_secret, access_token=access_token, access_token_secret=access_token_secret)
+client = tweepy.Client(bearer_token=Bearer_token.replace("'", ""), consumer_key=API_key.replace("'", ""), consumer_secret=API_key_secret.replace("'", ""), access_token=access_token.replace("'", ""), access_token_secret=access_token_secret.replace("'", ""))
 for hash in hashtags:
 	tweets=client.search_recent_tweets(query='#' + hash.replace("'", "").replace(' ', '') + ' -RT',start_time=LastRun, tweet_fields=['context_annotations', 'created_at'], max_results=50)
 	if not tweets.data: 
@@ -34,4 +34,4 @@ for hash in hashtags:
 		for tweet in tweets.data:
 			if log == 'True': 
 				print('#' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
-			client.retweet(tweet.id)
+			client.retweet(str(tweet.id))
