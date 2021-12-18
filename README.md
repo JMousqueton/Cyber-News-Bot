@@ -40,7 +40,14 @@ Execute main.py using python3
 python3 main.py
 ```
 
-You can add this into crontab 
+You can execute this script hourly with the crontab 
+
+For example if the script is in the folder /opt/bot : 
+```
+5 * * * *  cd /opt/bot ; python3 main.py
+```
+
+See [Crontab Guru](https://crontab.guru/) for more details about crontab syntax 
 
 ## Author
 
