@@ -40,15 +40,6 @@ You can add this into crontab
 
 ## Author
 
-### Original : 
-
-👤 **0z09e**
-
-* Twitter: [@0z09e](https://twitter.com/0z09e)
-* Github: [@0z09e](https://github.com/0z09e)
-
-### Fork : 
-
 👤 **Julien Mousqueton**
 
 * Website: <https://www.julienmousqueton.fr>
