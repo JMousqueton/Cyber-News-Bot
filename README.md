@@ -26,11 +26,13 @@ pip3 install -r requirements.txt
 3. Now just take those keys and slap them on config.cfg, Following keys are required.
 - API_key
 - API_key_secret
-- access_token
-- access_token_secret
-- bearer_token
+- Access_token
+- Access_token_secret
+- Bearer_token
 
 4. Now replace hashtags with whatever query you want.
+
+⚠️ For troubleshooting you can set the DEBUG variable to True
 
 ## Usage
 
