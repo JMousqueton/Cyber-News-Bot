@@ -1,6 +1,23 @@
-import tweepy
+#!/usr/bin/python3 
+# -*- coding: utf-8 -*-
+##################################################
+## Twitter Bot 
+##################################################
+## Apache 2.0
+##################################################
+## Author: #JMousqueton (Julien Mousqueton)
+## Copyright: Copyright 2021, Cyber-News-Bot 
+## Credits: Original idea 0z09e
+## License: Apache 2.0 
+## Version: 1.0.1
+## Maintainer: #JMousqueton (Julien Mousqueton)
+## Email: julien_at_mousqueton.io 
+##################################################
+# Generic/Built-in 
 from datetime import datetime, timezone
+# Other Libs
 from configparser import ConfigParser
+import tweepy
 
 config = ConfigParser(interpolation=None)
 config.read('config.cfg')
@@ -26,7 +43,7 @@ logger('Debug		: '+ debug)
 logger('Date 		: '+ now)
 
 if LastRun == '': 
-	logger("First Run")
+	logger("[+]First Run")
 	config.set('Bot', 'LastRun', str(now)) 
 	with open("config.cfg", 'w') as f:
 	    config.write(f)
@@ -43,8 +60,9 @@ for hash in hashtags:
 	logger('Query :' +  query)
 	tweets=client.search_recent_tweets(query=query,start_time=LastRun, tweet_fields=['context_annotations', 'created_at'], max_results=50)
 	if not tweets.data: 
-		logger('No new tweet for #'+hash.replace("'", "").replace(' ', ''))
+		logger('[-]No new tweet for #'+hash.replace("'", "").replace(' ', ''))
 	else:
 		for tweet in tweets.data:
-			logger('#' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
+			logger('[+] #' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
 			client.retweet(str(tweet.id))
+# END 
