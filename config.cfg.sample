@@ -2,8 +2,8 @@
 hashtags = 'cyberattaque','ransomware'
 # Leave empty for first run 
 lastrun = 
-# True will give some information on standart output 
-log = False
+# DEBUG = True will give some information on standart output 
+DEBUG = TRUE 
 
 [Twitter]
 api_key = ''
