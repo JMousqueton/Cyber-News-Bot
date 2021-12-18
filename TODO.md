@@ -6,11 +6,11 @@
 
 ### In Progress
 
-- [ ] Debug mode 
-
 ### Done ✓
 
-- [x] Create the TODO.md  
+- [x] Debug mode 
 - [x] Add Twitter credential keys to [config.cfg](config.cfg)
 - [x] Move the hashtag configuration to [config.cfg](config.cfg) file   
 - [x] Add a license 
+- [x] use Twitter APIv2
+- [x] Create the TODO.md  
