@@ -1,4 +1,4 @@
-# Cyber-News Twitter BOT 
+# 🏴‍☠️ Cyber-News Twitter BOT 
 ***
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
  ![Version](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
