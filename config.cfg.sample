@@ -3,7 +3,7 @@ hashtags = 'cyberattaque','ransomware'
 # Leave empty for first run 
 lastrun = 
 # DEBUG = True will give some information on standart output 
-DEBUG = TRUE 
+DEBUG = False 
 # choose one : fr,en,de,it, ... 
 lang = fr 
 
