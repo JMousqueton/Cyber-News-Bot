@@ -7,6 +7,10 @@
 
 Based on an idea of [Cybersec-Twiiter-BOT](https://github.com/0z09e/Cybersec-Twitter-BOT) this BOT retweets every tweets related to cybersecurity based on hashtags. 
 
+## Future 
+
+Check the [TODO.md](https://github.com/JMousqueton/Cyber-News-Bot/blob/main/TODO.md) file 
+
 ## Installation
 Install all the modules in ```requirement.txt```
 ```
@@ -51,7 +55,13 @@ You can add this into crontab
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/JMousqueton/Badware/issues).
+Feel free to check [issues page](https://github.com/JMousqueton/Cyber-News-Bot/issues).
+
+## 📝 License
+
+Copyright © 2021 [Julien Mousqueton](https://github.com/JMousqueton).
+
+This project is [Apache 2.0](https://github.com/JMousqueton/Cyber-News-Bot/blob/main/LICENSE) licensed.
 
 ## Show your support
 
