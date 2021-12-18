@@ -1,0 +1,13 @@
+[Bot]
+hashtags = 'cyberattaque','ransomware'
+# Leave empty for first run 
+lastrun = 
+# True will give some information on standart output 
+log = False
+
+[Twitter]
+api_key = ''
+api_key_secret = ''
+access_token = ''
+access_token_secret = ''
+bearer_token = ''
