@@ -4,6 +4,8 @@ hashtags = 'cyberattaque','ransomware'
 lastrun = 
 # DEBUG = True will give some information on standart output 
 DEBUG = TRUE 
+# choose one : fr,en,de,it, ... 
+lang = fr 
 
 [Twitter]
 api_key = ''
