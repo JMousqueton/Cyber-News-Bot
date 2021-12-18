@@ -49,6 +49,10 @@ For example if the script is in the folder /opt/bot :
 
 See [Crontab Guru](https://crontab.guru/) for more details about crontab syntax 
 
+## Demo 
+
+My bot is publishing the tweets [here](https://twitter.com/Bot_CyberNews) 
+
 ## Author
 
 👤 **Julien Mousqueton**
