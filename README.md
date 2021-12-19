@@ -5,7 +5,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](https://github.com/JMousqueton/Badware/blob/main/LICENSE)
 [![Twitter: JMousqueton](https://img.shields.io/twitter/follow/JMousqueton.svg?style=social)](https://twitter.com/JMousqueton)
 
-Based on an idea by [Cybersec-Twitter-BOT](https://github.com/0z09e/Cybersec-Twitter-BOT) this BOT retweets every tweets related to cybersecurity based on hashtags. 
+Based on an idea by [Cybersec-Twitter-BOT](https://github.com/0z09e/Cybersec-Twitter-BOT) this BOT written in Python3 retweets every tweets related to cybersecurity based on hashtags. 
 
 ## Future 
 
