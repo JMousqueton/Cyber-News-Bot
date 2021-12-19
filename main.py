@@ -43,12 +43,10 @@ logger('Debug		: '+ debug)
 logger('Date 		: '+ now)
 
 if LastRun == '': 
-	logger("[+]First Run")
-	config.set('Bot', 'LastRun', str(now)) 
-	with open("config.cfg", 'w') as f:
-	    config.write(f)
-	exit()
-
+	logger("[+]First Run ... wait 30 seconds")
+	LastRun = now 
+	time.sleep(30)
+	
 logger('Last Run	: '+LastRun)
 config.set('Bot', 'LastRun', str(now)) 
 with open("config.cfg", 'w') as f:
@@ -57,7 +55,7 @@ logger('---')
 client = tweepy.Client(bearer_token=Bearer_token.replace("'", ""), consumer_key=API_key.replace("'", ""), consumer_secret=API_key_secret.replace("'", ""), access_token=access_token.replace("'", ""), access_token_secret=access_token_secret.replace("'", ""),wait_on_rate_limit=True)
 for hash in hashtags:
 	query = '#' + hash.replace("'", "").replace(' ', '') + ' -RT lang:' + lang.replace("'", "").replace(' ', '')
-	logger('Query :' +  query)
+	logger('Query : ' +  query)
 	tweets=client.search_recent_tweets(query=query,start_time=LastRun, tweet_fields=['context_annotations', 'created_at'], max_results=50)
 	if not tweets.data: 
 		logger('[-]No new tweet for #'+hash.replace("'", "").replace(' ', ''))
