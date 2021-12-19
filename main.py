@@ -64,7 +64,7 @@ for hash in hashtags:
 		for tweet in tweets.data:
 			if "RT @" not in tweet.text:
 				logger('[+] #' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
-				# client.retweet(str(tweet.id))
+				client.retweet(str(tweet.id))
 			else:
 				logger('[-] tweet '+ str(tweet.id) + ' is a RT')
 # END 
