@@ -2,14 +2,9 @@
 ***
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
  ![Version](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
-<<<<<<< HEAD
  [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](https://github.com/JMousqueton/Badware/blob/main/LICENSE)
  [![Twitter: JMousqueton](https://img.shields.io/twitter/follow/JMousqueton.svg?style=social)](https://twitter.com/JMousqueton)
-=======
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](https://github.com/JMousqueton/Badware/blob/main/LICENSE)
-[![Twitter: JMousqueton](https://img.shields.io/twitter/follow/JMousqueton.svg?style=social)](https://twitter.com/JMousqueton)
 [![Twitter: Bot_CyberNews](https://img.shields.io/twitter/follow/Bot_CyberNews.svg?style=social)](https://twitter.com/Bot_CyberNews)
->>>>>>> 371cde28ff14905e2180c705b2b8c72d6f8571c0
 
 Based on an idea by [Cybersec-Twitter-BOT](https://github.com/0z09e/Cybersec-Twitter-BOT) this BOT written in Python3 retweets every tweets related to cybersecurity based on hashtags. 
 
