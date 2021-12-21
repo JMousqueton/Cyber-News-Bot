@@ -61,10 +61,13 @@ for hash in hashtags:
 	if not tweets.data: 
 		logger('[-]No new tweet for #'+hash.replace("'", "").replace(' ', ''))
 	else:
-		for tweet in tweets.data:
-			if "RT @" not in tweet.text:
-				logger('[+] #' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
-				client.retweet(str(tweet.id))
-			else:
-				logger('[-] tweet '+ str(tweet.id) + ' is a RT')
+		try: 
+			for tweet in tweets.data:
+				if "RT @" not in tweet.text:
+					logger('[+] #' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
+					client.retweet(str(tweet.id))
+				else:
+					logger('[-] tweet '+ str(tweet.id) + ' is a RT')
+		except:
+				logger ('[!] Unkwown Erro')
 # END 
