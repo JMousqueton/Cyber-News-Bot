@@ -60,7 +60,7 @@ My bot is publishing the tweets [here](https://twitter.com/Bot_CyberNews)
 
 👤 **Julien Mousqueton**
 
-* Website: <https://www.julienmousqueton.fr>
+* Website: <https://julien.io>
 * Twitter: [@JMousqueton](https://twitter.com/JMousqueton)
 * Github: [@JMousqueton](https://github.com/JMousqueton)
 * LinkedIn: [Julien Mousqueton](https://linkedin.com/in/julienmousqueton)
