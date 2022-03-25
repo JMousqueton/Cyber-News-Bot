@@ -1,2 +1,2 @@
-tweepy==4.6.0
+tweepy==4.8.0
 configparser==5.2.0
