@@ -69,5 +69,5 @@ for hash in hashtags:
 				else:
 					logger('[-] tweet '+ str(tweet.id) + ' is a RT')
 		except:
-				logger ('[!] Unkwown Erro')
+				logger ('[!] Unkwown Error')
 # END 
