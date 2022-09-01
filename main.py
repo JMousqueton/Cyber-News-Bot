@@ -64,7 +64,7 @@ for hash in hashtags:
 		try: 
 			for tweet in tweets.data:
 				if "RT @" not in tweet.text:
-					if "weed" or "cannabis" in tweet.text: 
+					if "weed" or "cannabis" not in tweet.text: 
 						logger('[+] #' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
 						client.retweet(str(tweet.id))
 					else:
