@@ -68,9 +68,9 @@ for hash in hashtags:
 						logger('[+] #' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
 						client.retweet(str(tweet.id))
 					else:
-						logger('[-] tweet '+ str(tweet.id) + ' contains forbiden word')
+						logger('[!] tweet '+ str(tweet.id) + ' contains forbiden word')
 				else:
-					logger('[-] tweet '+ str(tweet.id) + ' is a RT')
+					logger('[!] tweet '+ str(tweet.id) + ' is a RT')
 		except:
 				logger ('[!] Unkwown Error')
 # END 
