@@ -64,11 +64,8 @@ for hash in hashtags:
 		try: 
 			for tweet in tweets.data:
 				if "RT @" not in tweet.text:
-					if "weed" or "cannabis" or "#imessage"  or "#CheatSheet" or "#TwitterDown" or "#twitterdown"or "#100DaysOfCode" not in tweet.text: 
-						logger('[+] #' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
-						client.retweet(str(tweet.id))
-					else:
-						logger('[!] tweet '+ str(tweet.id) + ' contains forbiden word')
+					logger('[+] #' + hash.replace("'", "").replace(' ', '') + ' ' + str(tweet.id) + ' ' + str(tweet.created_at))
+					client.retweet(str(tweet.id))
 				else:
 					logger('[!] tweet '+ str(tweet.id) + ' is a RT')
 		except:
